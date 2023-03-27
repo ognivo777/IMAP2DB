@@ -5,7 +5,7 @@ import com.j256.ormlite.table.DatabaseTable;
 
 import java.util.Date;
 
-@DatabaseTable(tableName = "mails3")
+@DatabaseTable(tableName = "mails")
 public class MailInfo {
     @DatabaseField(generatedId = true)
     private long id;

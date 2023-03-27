@@ -56,4 +56,14 @@ public class Folder {
     public void setUnseen(int unseen) {
         this.unseen = unseen;
     }
+
+    @Override
+    public String toString() {
+        return "Folder{" +
+                "name='" + name + '\'' +
+                ", total=" + total +
+                ", recent=" + recent +
+                ", unseen=" + unseen +
+                '}';
+    }
 }

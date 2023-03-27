@@ -23,10 +23,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeoutException;
@@ -54,8 +51,30 @@ public class Main implements Closeable {
 
     public static void main(String[] args) throws Exception {
         Logger.setGlobalLogLevel(Level.INFO); //ormlite logging level
+        boolean onlyFolders = false;
+        boolean singleFolder = false;
+        String folderToLoad = "";
+        String configFileName = "settings.properties";
 
-        URL url = Paths.get("settings.properties").toUri().toURL();
+        if(args.length>0) {
+            List<String> cmdList = Arrays.asList(args);
+            if(cmdList.get(0).endsWith(".properties")) {
+                configFileName = cmdList.get(0);
+            }
+            if (cmdList.contains("onlyFolders")) {
+                onlyFolders = true;
+            } else if (cmdList.contains("singleFolder")) {
+                int i = cmdList.indexOf("singleFolder");
+                if (i + 1 < cmdList.size()) {
+                    singleFolder = true;
+                    folderToLoad = cmdList.get(i + 1);
+                } else {
+                    System.out.println("Specify folder name after 'singleFolder' param.");
+                }
+            }
+        }
+
+        URL url = Paths.get(configFileName).toUri().toURL();
         System.out.println("url = " + url);
         ConfigValuePropertiesConfigSource fileConfig = new ConfigValuePropertiesConfigSource(url);
 
@@ -69,7 +88,16 @@ public class Main implements Closeable {
         )){
             main.init();
             main.start();
-            main.loadAllFolders();
+            if (onlyFolders) {
+                System.out.println("Folders loaded.");
+                //do nothing special
+            } else if (singleFolder) {
+                //load specific folder
+                main.loadFolder(folderToLoad);
+            } else {
+                //full load by default
+                main.loadAllFolders();
+            }
         }
     }
 

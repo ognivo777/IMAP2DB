@@ -1,0 +1,35 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IMAP-lister:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IMAP_lister_jar</output-path>
+    <root id="archive" name="IMAP-lister.jar">
+      <element id="module-output" name="IMAP-lister" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/h2database/h2/2.1.214/h2-2.1.214.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/j256/ormlite/ormlite-jdbc/6.1/ormlite-jdbc-6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/yahoo/imapnio/imapnio.core/5.0.7/imapnio.core-5.0.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-handler/4.1.77.Final/netty-handler-4.1.77.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-common/4.1.77.Final/netty-common-4.1.77.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-resolver/4.1.77.Final/netty-resolver-4.1.77.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.1.77.Final/netty-buffer-4.1.77.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-transport/4.1.77.Final/netty-transport-4.1.77.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/netty/netty-codec/4.1.77.Final/netty-codec-4.1.77.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/mail/javax.mail/1.5.5/javax.mail-1.5.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/config/smallrye-config/3.2.0/smallrye-config-3.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/config/smallrye-config-core/3.2.0/smallrye-config-core-3.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/microprofile/config/microprofile-config-api/3.0.2/microprofile-config-api-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/common/smallrye-common-annotation/2.1.0/smallrye-common-annotation-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/common/smallrye-common-expression/2.1.0/smallrye-common-expression-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/common/smallrye-common-function/2.1.0/smallrye-common-function-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/common/smallrye-common-constraint/2.1.0/smallrye-common-constraint-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/common/smallrye-common-classloader/2.1.0/smallrye-common-classloader-2.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/ow2/asm/asm/9.4/asm-9.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/io/smallrye/config/smallrye-config-common/3.2.0/smallrye-config-common-3.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
